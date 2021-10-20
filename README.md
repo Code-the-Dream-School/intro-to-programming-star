@@ -1,4 +1,4 @@
-# Sections 2-6: Personal Portfolio
+# Sections 2-6: Personal Portfolio --
 
 ## Overview
 
