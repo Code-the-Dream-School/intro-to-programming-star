@@ -38,35 +38,40 @@ Now, open the project directory in your code editor and continue to the next sec
 
 #### Create a JavaScript file
 
-- [ ] Create a folder called `js/`
-- [ ] Inside that folder, create a JavaScript file called `index.js`
-- [ ] Open your `index.html` file
+- [x] Create a folder called `js/`
+- [x] Inside that folder, create a JavaScript file called `index.js`
+- [x] Open your `index.html` file
 - [ ] Before the closing `</body>` tag, insert a `<script>` element with a `src` attribute that specifies the relative path to your JavaScript file (i.e. `js/index.js`)
-- [ ] Save and open in your browser
+- [x] Save and open in your browser
 
 #### Add Footer Element
 
-- [ ] Open your `index.html` file
-- [ ] Above the `<script>` element, add an empty `<footer>` element
-- [ ] Save and refresh your browser
+- [x] Open your `index.html` file
+- [x] Above the `<script>` element, add an empty `<footer>` element
+- [x] Save and refresh your browser
 
 #### Insert Copyright Text in Footer
 
-- [ ] Open your `index.js` file
+- [x] Open your `index.js` file
 
-- [ ] Create a new date object and store it in a variable named `today`
+- [x] Create a new date object and store it in a variable named `today`
   - hint: `new Date()` constructor
-- [ ] Retrieve the current year from your date object and store it in a variable named `thisYear`
+- [x] Retrieve the current year from your date object and store it in a variable named `thisYear`
   - hint: `getFullYear` method
 
-- [ ] Using "DOM Selection", select the `<footer>` element from the DOM and store it in a variable named `footer`
+- [x] Using "DOM Selection", select the `<footer>` element from the DOM and store it in a variable named `footer`
   - hint: `querySelector` method
-- [ ] Create a new paragraph (`p`) element and store it in a variable named `copyright`
+
+- [x] Create a new paragraph (`p`) element and store it in a variable named `copyright`
   - hint: `createElement` method
-- [ ] Set the inner HTML of your `copyright` element to display your name and the current year
+
+- [x] Set the inner HTML of your `copyright` element to display your name and the current year
   - hint: use `thisYear` variable from earlier
-- [ ] Using "DOM Manipulation", append the `copyright` element to the footer
+
+- [x] Using "DOM Manipulation", append the `copyright` element to the footer
   - hint: `appendChild` method
+
+
 - [ ] Save and refresh your browser
   - You should see the text "Your Name 2021" at the bottom of the page
 
