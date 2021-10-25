@@ -72,32 +72,41 @@ Now, open the project directory in your code editor and continue to the next sec
   - hint: `appendChild` method
 
 
-- [ ] Save and refresh your browser
+- [x] Save and refresh your browser
   - You should see the text "Your Name 2021" at the bottom of the page
 
 #### Add Skills Section
 
-- [ ] Open your `index.html` file
-- [ ] Above the "Connect" section, add a new `<section>` element with an `id` attribute of value "skills"
-- [ ] Inside the new section, add a `<h2>` element that says "Skills"
-- [ ] After the `<h2>` element, add an empty unordered list (`<ul>`) element
-- [ ] Save and refresh your browser
+- [x] Open your `index.html` file
+- [x] Above the "Connect" section, add a new `<section>` element with an `id` attribute of value "skills"
+- [x] Inside the new section, add a `<h2>` element that says "Skills"
+- [x] After the `<h2>` element, add an empty unordered list (`<ul>`) element
+- [x] Save and refresh your browser
   - You should see the new "Skills" heading
 
 #### Create List of Skills
 
-- [ ] Open your `index.js` file
-- [ ] List your technical skills by creating an Array of String values and store it in a variable named `skills`
-- [ ] Using "DOM Selection", select the #skills section by id and store it in a variable named `skillsSection`
+- [x] Open your `index.js` file
+- [x] List your technical skills by creating an Array of String values and store it in a variable named `skills`
+
+- [?] Using "DOM Selection", select the #skills section by id and store it in a variable named `skillsSection`
   - hint: `querySelector` or `getElementById` method
-- [ ] Using "DOM Selection", query the `skillsSection` (instead of the entire `document`) to find the `<ul>` element and store it in a variable named `skillsList`
-- [ ] Create a `for` loop to iterate over your `skills` Array, starting at index 0
-- [ ] Inside the loop, create a new list item (`li`) element and store it in a variable named `skill`
+
+- [?] Using "DOM Selection", query the `skillsSection` (instead of the entire `document`) to find the `<ul>` element and store it in a variable named `skillsList`
+
+- [x] Create a `for` loop to iterate over your `skills` Array, starting at index 0
+
+- [x] Inside the loop, create a new list item (`li`) element and store it in a variable named `skill`
+
   - hint: `createElement` method
-- [ ] On the next line, set the inner text of your `skill` variable to the value of the current Array element
+
+- [x] On the next line, set the inner text of your `skill` variable to the value of the current Array element
+
   - hint: access the Array element using bracket notation
-- [ ] On the next line, append the `skill` element to the `skillsList` element
+
+- [] On the next line, append the `skill` element to the `skillsList` element
   - hint: `appendChild` method
+
 - Save and refresh your browser
   - You should see your list of skills beneath the "Skills" heading
 
