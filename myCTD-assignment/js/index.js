@@ -20,11 +20,14 @@ const skillsList =document.querySelector("#skills ul");
     }
     
     
-    const messageForm = document.querySelector("[name=\"leave_message\"]").addEventListener("submit", function(event){
+    const messageForm = document.querySelector("[name=\"leave_message\"]");
+    
+    messageForm.addEventListener("submit", function(event){
         let name = event.target.name.value ;
         let email = event.target.email.value;
         let message = event.target.message.value;
 
-        console.log(name +" " + email + " " + message);
         event.preventDefault();
+        console.log(name +" " + email + " " + message);
+        messageForm.reset();
     });
