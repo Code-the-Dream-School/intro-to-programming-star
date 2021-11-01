@@ -88,18 +88,18 @@ Now, open the project directory in your code editor and continue to the next sec
 
 - [x] Inside the callback function for your event listener, add a `console.log` statement to log the three variables you created in the previous step
 
-- [ ] Save and refresh your browser
+- [x] Save and refresh your browser
 
-- [ ] Fill out the HTML form in your browser and hit "Submit"
+- [x] Fill out the HTML form in your browser and hit "Submit"
 
 > Note: at this point, you should notice that the browser is refreshing automatically when you submit your form which is not the desired behavior
 
-- [ ] Inside the callback function, above the other code you just wrote, add a new line to prevent the default refreshing behavior of the "submit" event
+- [x] Inside the callback function, above the other code you just wrote, add a new line to prevent the default refreshing behavior of the "submit" event
   - hint: `preventDefault` method
 
-- [ ] Save and refresh your browser
+- [x] Save and refresh your browser
 
-- [ ] Fill out the HTML form in your browser and hit "Submit"
+- [x] Fill out the HTML form in your browser and hit "Submit"
   - You should see that the page **does not** refresh and your values are logged in the console
 
 > Note: at this point, you should notice that the form is submitting properly but the form fields are not reset after submit
