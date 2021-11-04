@@ -104,20 +104,20 @@ Now, open the project directory in your code editor and continue to the next sec
 
 > Note: at this point, you should notice that the form is submitting properly but the form fields are not reset after submit
 
-- [ ] Inside the callback function, on the very last line, add a new line of code to clear the form
+- [x] Inside the callback function, on the very last line, add a new line of code to clear the form
 - hint: `reset` method
 
-- [ ] Save and refresh your browser
+- [x] Save and refresh your browser
 
 #### Display Messages in List
 
-- [ ] Open `index.js` and start inside the event listener callback function on the line **above** where you reset the form
+- [x] Open `index.js` and start inside the event listener callback function on the line **above** where you reset the form
 
-- [ ] Using "DOM Selection", select the #messages section by `id` and store it in a variable named `messageSection`
+- [?] Using "DOM Selection", select the #messages section by `id` and store it in a variable named `messageSection`
 
-- [ ] Using "DOM Selection", query the `messageSection` (instead of the entire `document`) to find the `<ul>` element and store it in a variable named `messageList`
+- [x] Using "DOM Selection", query the `messageSection` (instead of the entire `document`) to find the `<ul>` element and store it in a variable named `messageList`
 
-- [ ] Create a new list item (`li`) element and store it in a variable named `newMessage`
+- [x] Create a new list item (`li`) element and store it in a variable named `newMessage`
 
 - [ ] On the next line, set the inner HTML of your `newMessage` element with the following information:
   - `<a>` element that displays the "name" and links to the "email" (hint: use the `mailto:` prefix)

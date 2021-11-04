@@ -29,5 +29,11 @@ const skillsList =document.querySelector("#skills ul");
 
         event.preventDefault();
         console.log(name +" " + email + " " + message);
+       
+       let messageSection = document.querySelector("#messages");
+       let messageList = messageSection.querySelector("ul");
+       let newMessage = document.createElement("li");
+       newMessage.innerHTML = "<a href=\"mailto:" + email + "?subject=Emails about Portfolio\"></a><span style=\"color:green;font-weight:bold\">message</span>";
+
         messageForm.reset();
     });
