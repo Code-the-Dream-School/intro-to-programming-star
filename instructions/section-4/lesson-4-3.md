@@ -119,24 +119,24 @@ Now, open the project directory in your code editor and continue to the next sec
 
 - [x] Create a new list item (`li`) element and store it in a variable named `newMessage`
 
-- [ ] On the next line, set the inner HTML of your `newMessage` element with the following information:
+- [x] On the next line, set the inner HTML of your `newMessage` element with the following information:
   - `<a>` element that displays the "name" and links to the "email" (hint: use the `mailto:` prefix)
   - `<span>` element that displays the "message"
 
-- [ ] Create a new `<button>` element and store it in a variable named `removeButton`
+- [x] Create a new `<button>` element and store it in a variable named `removeButton`
   - Set the inner text to "remove"
   - Set the `type` attribute to "button"
   - Add an event listener to the `removeButton` element that handles the "click" event
     - Inside the callback function, find the button's parent element using DOM Traversal (hint: `parentNode` property) and store it in a variable named `entry`
     - Remove the `entry` element from the DOM (hint: `remove` method)
 
-- [ ] Append the `removeButton` to the `newMessage` element
+- [x] Append the `removeButton` to the `newMessage` element
   - hint: `appendChild` method
 
-- [ ] Append the `newMessage` to the `messageList` element
+- [x] Append the `newMessage` to the `messageList` element
 
 
-- [ ] Save and refresh your browser
+- [x] Save and refresh your browser
 
 #### Final Result
 

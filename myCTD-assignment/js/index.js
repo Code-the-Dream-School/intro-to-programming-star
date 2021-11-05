@@ -22,7 +22,7 @@ const skillsList =document.querySelector("#skills ul");
     
     const messageForm = document.querySelector("[name=\"leave_message\"]");
     
-    messageForm.addEventListener("submit", function(event){
+     messageForm.addEventListener("submit", function(event){
         let name = event.target.name.value ;
         let email = event.target.email.value;
         let message = event.target.message.value;
@@ -30,10 +30,23 @@ const skillsList =document.querySelector("#skills ul");
         event.preventDefault();
         console.log(name +" " + email + " " + message);
        
-       let messageSection = document.querySelector("#messages");
-       let messageList = messageSection.querySelector("ul");
-       let newMessage = document.createElement("li");
-       newMessage.innerHTML = "<a href=\"mailto:" + email + "?subject=Emails about Portfolio\"></a><span style=\"color:green;font-weight:bold\">message</span>";
+        let messageSection = document.querySelector("#messages");
+        let messageList = messageSection.querySelector("ul");
+        let newMessage = document.createElement("li");
+        newMessage.innerHTML = "<a href=\"mailto:" + email + "?subject=Emails about Portfolio\">"+ name +"</a> <span style=\"color:green;font-weight:bold\">"+ message +"</span>";
 
+        let removeButton =document.createElement("button");
+            removeButton.setAttribute("type", "button");
+            removeButton.innerText = "remove";
+            
+
+        removeButton.addEventListener("click", function(){
+        let entry = removeButton.parentNode;
+            entry.remove();
+           
+       });
+        
+        newMessage.appendChild(removeButton);
+        messageList.appendChild(newMessage);
         messageForm.reset();
     });
