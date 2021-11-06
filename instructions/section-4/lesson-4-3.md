@@ -104,39 +104,39 @@ Now, open the project directory in your code editor and continue to the next sec
 
 > Note: at this point, you should notice that the form is submitting properly but the form fields are not reset after submit
 
-- [ ] Inside the callback function, on the very last line, add a new line of code to clear the form
+- [x] Inside the callback function, on the very last line, add a new line of code to clear the form
 - hint: `reset` method
 
-- [ ] Save and refresh your browser
+- [x] Save and refresh your browser
 
 #### Display Messages in List
 
-- [ ] Open `index.js` and start inside the event listener callback function on the line **above** where you reset the form
+- [x] Open `index.js` and start inside the event listener callback function on the line **above** where you reset the form
 
-- [ ] Using "DOM Selection", select the #messages section by `id` and store it in a variable named `messageSection`
+- [?] Using "DOM Selection", select the #messages section by `id` and store it in a variable named `messageSection`
 
-- [ ] Using "DOM Selection", query the `messageSection` (instead of the entire `document`) to find the `<ul>` element and store it in a variable named `messageList`
+- [x] Using "DOM Selection", query the `messageSection` (instead of the entire `document`) to find the `<ul>` element and store it in a variable named `messageList`
 
-- [ ] Create a new list item (`li`) element and store it in a variable named `newMessage`
+- [x] Create a new list item (`li`) element and store it in a variable named `newMessage`
 
-- [ ] On the next line, set the inner HTML of your `newMessage` element with the following information:
+- [x] On the next line, set the inner HTML of your `newMessage` element with the following information:
   - `<a>` element that displays the "name" and links to the "email" (hint: use the `mailto:` prefix)
   - `<span>` element that displays the "message"
 
-- [ ] Create a new `<button>` element and store it in a variable named `removeButton`
+- [x] Create a new `<button>` element and store it in a variable named `removeButton`
   - Set the inner text to "remove"
   - Set the `type` attribute to "button"
   - Add an event listener to the `removeButton` element that handles the "click" event
     - Inside the callback function, find the button's parent element using DOM Traversal (hint: `parentNode` property) and store it in a variable named `entry`
     - Remove the `entry` element from the DOM (hint: `remove` method)
 
-- [ ] Append the `removeButton` to the `newMessage` element
+- [x] Append the `removeButton` to the `newMessage` element
   - hint: `appendChild` method
 
-- [ ] Append the `newMessage` to the `messageList` element
+- [x] Append the `newMessage` to the `messageList` element
 
 
-- [ ] Save and refresh your browser
+- [x] Save and refresh your browser
 
 #### Final Result
 
