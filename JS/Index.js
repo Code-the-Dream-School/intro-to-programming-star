@@ -18,4 +18,36 @@ for(let skll of skills){
 
 }
 
+let messageForm= document.getElementsByName("leave_message")[0];
+messageForm.addEventListener('submit',()=>{
+    event.preventDefault();
+    let fname=event.target.name.value;
+    let femail=event.target.email.value;
+    let fmessage=event.target.message.value 
+    console.log(fname,femail,fmessage);
+    const messageSelection= document.querySelector("#messages");
+    const messageList= messageSelection.querySelector("ul");
+    const newMessages=document.createElement("li");
+    newMessages.innerHTML=`<a href="mailto:${femail}">${fname}</a> <span>${fmessage}</span>`;
+    const removeButton=document.createElement("button");
+    removeButton.setAttribute('type','button');
+    removeButton.textContent="Remove";
+    removeButton.addEventListener('click',()=>{
+        const entry=removeButton.parentNode;
+        entry.remove();
+    });
+    
+ newMessages.appendChild(removeButton);
+    messageList.appendChild(newMessages);
+    
+
+   
+
+
+
+
+
+    messageForm.reset();
+
+});
 
