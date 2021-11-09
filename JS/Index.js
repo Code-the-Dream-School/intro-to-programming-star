@@ -13,6 +13,7 @@ const skillList=skillSection.querySelector("ul");
 
 for(let skll of skills){
     const skill=document.createElement("li");
+    skill.setAttribute('class','items');
     skill.innerText=skll;
     skillList.appendChild(skill);
 
@@ -28,7 +29,7 @@ messageForm.addEventListener('submit',()=>{
     const messageSelection= document.querySelector("#messages");
     const messageList= messageSelection.querySelector("ul");
     const newMessages=document.createElement("li");
-    newMessages.innerHTML=`<a href="mailto:${femail}">${fname}</a> <span>${fmessage}</span>`;
+    newMessages.innerHTML=`<a href="mailto:${femail}">${fname}</a> <span class="messageItems">${fmessage}</span>`;
     const removeButton=document.createElement("button");
     removeButton.setAttribute('type','button');
     removeButton.textContent="Remove";

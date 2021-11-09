@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(229, 225, 250);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    text-align: center;
+}
+h1,footer{
+    border-style: dashed;
+    border-color: rgb(135, 90, 240);
+    font-size: 2.5rem;
+    
+}
+footer{
+    margin-top: 2em;
+    font-size: 1em;
+}
+
+span{
+    background-color: rgb(217, 167, 250);
+    border-radius: 30%;
+}
+h2{
+    font-size:2em;
+    text-decoration: underline;
+}
+
+section{
+    margin-top: 2.5em;
+}
+
+
+img{
+    width:4%;
+}
+
+
+ul{
+    list-style:none ;
+
+}
+
+.items{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    width: 10%;
+    text-align: center;
+    padding-block: 0.5%;
+}
+
+form,#messages{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(217, 167, 250);
+    max-width: min-content;
+}
+.messageItems{
+    background-color: rgb(199, 148, 235);
+    border-style: solid;
+    border-radius: 0%;
+    margin-right: 80px;
+   
+}
+#messages{
+  
+    border-style: solid;
+    
+}
+
+
+
+
+button{
+    font-family: monospace;
+    border-radius: 75%;
+}
+  
+
+
