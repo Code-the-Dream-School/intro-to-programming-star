@@ -61,7 +61,7 @@ For this assignment, there are some general requirements but the design is up to
 - [x] Customize the font family
   - (Optional) Load in a font family from [Google Fonts](https://fonts.google.com/)
 
-- [ ] Add spacing (padding/margin) between sections
+- [x] Add spacing (padding/margin) between sections
 
 - [ ] Change the font size, weight, and color of all headings
 
@@ -109,7 +109,7 @@ Push your commit to the remote repository (visible in GitHub):
 
 Check the log to make sure your commit has been published:
 
-    git log --oneline
+    git log --online
 
 Create a pull request and submit:
 

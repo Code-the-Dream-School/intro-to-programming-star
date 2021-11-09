@@ -3,7 +3,7 @@
         <head>
             <meta charset="utf-8">
             <title>Curtis Clayton's Web Portfolio</title>
-            <link rel="stylesheet" href="css/index.css">
+            <link rel="stylesheet" href="css/style.css">
         </head>
 
 
@@ -18,6 +18,7 @@
 </div>   
 
     <!--wrap in unordered list element-->
+    <div class="exp">
     <section>
         <h2><em>Experience</em></h2>
         <p>
@@ -28,56 +29,66 @@
          <li>- Kahn Academy JavaScript/CSS/HTML lessons.</li>
          <li>- Current Student at Code The Dream (started 2021).</li>
           
-    </p>
+        </p>
+    </div>    
 
-
+    <div class="johnny5">
         <img src="johnny5000_04-23-2021-.JPEG" alt="a picture of johnny5000, johnny5000 is a hexapod robot that I built"
         style="width: 300px;height: 250px;"><p><li>Big Hexapod robot that I started building over the pandemic after purchasing a Raspberry Pi 4b, currently learning how to program it using Python 3.</li></p>
-        </ul> 
+        <!--need to move style to CSS-->
+        </ul>
+    </div>     
     </section>
-     
+    
+    <div class="skillsList">
     <section id="skills">
         <h2><em>Skills</em></h2>
         <ul>
 
         </ul>
     </section>
-   
+    </div>
+    
+    <div class="connect">
     <section>
        <h2><em>Connect</em></h2>
         <ul>
             <li>Email: Curt122181@gmail.com</li>
             <li><a href="https://github.com/curt4207">GitHub: https://github.com/curt4207</a></li>
         </ul>
-       
-        <section>
-            <h2>Leave a Message</h2>
-            <form name="leave_message">
+    </section>
+    </div>
 
-                <br><label for="name">Your Name</label>
-                <input type="text" name="name" required="true"></br>
+    <div class="leaveMessage">
+    <section>
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
 
-                <br><label for="email">Your Email</label>
-                <input type="email" name="email" required="true"></br>
+            <br><label for="name">Your Name</label>
+            <input type="text" name="name" required="true"></br>
 
-                <br><label for="message">leave a Message</label>
-                <textarea name="message" required="true">
-                </textarea></b>
+            <br><label for="email">Your Email</label>
+            <input type="email" name="email" required="true"></br>
+
+            <br><label for="message">leave a Message</label>
+            <textarea name="message" required="true">
+            </textarea></b>
                 
-                <br><label for="submit">Submit</label>
-                <button type="submit" name="submit" >Submit</button></br>
-            </form>
-        </section>
+            <br><label for="submit">Submit</label>
+            <button type="submit" name="submit" >Submit</button></br>
+        </form>
+    </section>
+    </div>
 
-        <section id="messages">
-            <h2>Messages</h2>
+    <section id="messages">
+        <h2>Messages</h2>
             <ul>
 
             </ul>
 
-        </section>
+    </section>
 
-        <footer></footer>
+    <footer></footer>
         <script src="js/index.js"></script>   
     </body>
     </section>
