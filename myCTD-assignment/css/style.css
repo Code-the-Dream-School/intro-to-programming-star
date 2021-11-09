@@ -4,7 +4,8 @@ body{
     font-family: sans-serif,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;    
 }
 h1{
-   color:deeppink; 
+   color:deeppink;
+  
 }
 
 h2{
@@ -13,4 +14,23 @@ h2{
 
 div.aboutMe{
  color:red;
+ margin:25px 50px 75px 200px; 
+}
+
+div.exp{
+    margin:25px 50px 0px 80px;
+    border:solid;
+}
+div.johnny5{
+    margin:0px 50px 0px 150px;
+  
+}
+div.skillsList{
+    margin:50px 0px 0px 400px;
+}
+div.connect{
+    margin:0px 0px 70px 50px;
+}
+div.leaveMessage{
+    margin:100px 0px 0px 150px;
 }
