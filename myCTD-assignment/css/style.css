@@ -1,0 +1,16 @@
+body{
+    background-color:cyan;
+    color:darkmagenta;
+    font-family: sans-serif,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;    
+}
+h1{
+   color:deeppink; 
+}
+
+h2{
+    color:blue;
+}
+
+div.aboutMe{
+ color:red;
+}
