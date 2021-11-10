@@ -33,21 +33,21 @@ for (let i = 0; i < skills.length; i++) {
 
 skillsSection.appendChild(unorderedList);
 
-const messageForm = document.querySelector(`[name="leave_message"]`);
+const messageForm = document.querySelector(`[name="leave_a_message"]`);
 
 messageForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNameElement = document.querySelector("#first-name-input");
+  const firstNameElement = document.querySelector("#first-name");
   const firstNameText = firstNameElement.value;
 
-  const lastNameElement = document.querySelector("#last-name-input");
+  const lastNameElement = document.querySelector("#last-name");
   const lastNameText = lastNameElement.value;
 
-  const emailElement = document.querySelector("#email-input");
+  const emailElement = document.querySelector("#email");
   const emailText = emailElement.value;
 
-  const messageElement = document.querySelector("#message-input");
+  const messageElement = document.querySelector("#message");
   const messageText = messageElement.value;
 
   console.log(
