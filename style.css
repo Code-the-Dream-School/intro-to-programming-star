@@ -1,9 +1,13 @@
-section input {
-  background-color: rgb(238, 238, 238);
-  padding: 10px 15px;
-  width: 25%;
-  display: block;
-  text-align: left;
+heading h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #031235;
+}
+
+body {
+  background-color: #d2e4c4;
+  font-family: "Poppins", sans-serif;
+  color: #340068;
 }
 
 section textarea {
@@ -12,4 +16,24 @@ section textarea {
   width: 25%;
   display: block;
   text-align: left;
+}
+
+section experience {
+  list-style-position: inside;
+}
+
+section skills {
+  list-style-position: outside;
+}
+
+section input {
+  background-color: rgb(238, 238, 238);
+  padding: 10px 15px;
+  width: 25%;
+  display: block;
+  text-align: left;
+}
+label {
+  font-size: 16px;
+  color: 061a40;
 }
