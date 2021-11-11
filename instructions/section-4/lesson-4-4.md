@@ -63,7 +63,7 @@ For this assignment, there are some general requirements but the design is up to
 
 - [x] Add spacing (padding/margin) between sections
 
-- [ ] Change the font size, weight, and color of all headings
+- [x] Change the font size, weight, and color of all headings
 
 - [ ] Transform the "Experience" list items into styled blocks
 

@@ -12,25 +12,48 @@ h2{
     color:blue;
 }
 
+h3,h4{
+    color:darkgreen;
+}
+
 div.aboutMe{
- color:red;
- margin:25px 50px 75px 200px; 
+ background-color: aliceblue;
+ margin:2vh 40vw 5vh 20vw;
+ border-style:inset solid;
+ border-width: 20px;
+ /* border:solid;  */
 }
 
 div.exp{
-    margin:25px 50px 0px 80px;
-    border:solid;
+    margin:0vh 50vw 0vh 2vw;
+    border:thick double ;
 }
-div.johnny5{
-    margin:0px 50px 0px 150px;
-  
+/* div.johnny5{
+    margin:0rem 0rem 0rem 0rem;
+    
+}  */
+                        /*fix image sizing */
+div.johnny5,img{
+    border: 3px solid green;
+    border-radius: 100px 5%;
+    padding: 5px;
+    width: 20rem;
+    display:inline-block;
+    margin:2vh 5vw 0vh 5vw;
 }
+
+/*To do */
 div.skillsList{
-    margin:50px 0px 0px 400px;
+    font-style: italic;
+    font-size:18px;
+    border:2px solid red;
+    margin:5vh 50vw 2vh 5vw;
 }
 div.connect{
     margin:0px 0px 70px 50px;
 }
 div.leaveMessage{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bold;
     margin:100px 0px 0px 150px;
 }
