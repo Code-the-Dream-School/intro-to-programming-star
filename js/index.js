@@ -13,8 +13,10 @@ for (let i=0; i<skills.length; i++) {
   skill.innerHTML=skills[i];
   skillsList.appendChild(skill);
 };
+
 const messageForm = document.querySelector('[name="leave_message"]');
 messageForm.addEventListener('submit', (event) => {
+
   event.preventDefault();
   const name = event.target.name;
   const email = event.target.email;
@@ -42,9 +44,11 @@ messageForm.addEventListener('submit', (event) => {
   newMessage.appendChild(removeButton);
 
   removeButton.addEventListener('click', (event) =>{
+
     const entry = event.target.parentNode;
     entry.remove();
     })
   messageForm.reset();
+
 
 })
