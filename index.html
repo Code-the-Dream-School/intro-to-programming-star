@@ -4,20 +4,23 @@
     <title>Coding Student 2021</title>
     <meta name="author" content ="Melania Solis">
     <meta name="description" content="Personal Information">
+    <link rel='stylesheet' href='css/index.css'>
   </head>
 
   <body>
     <h2>Melania Solis</h2>
       <section>
+        <h2>About</h2>
         <ul>
-          <li><h2>About</h2></li>
-          <p>I'm originally from <a href="https://en.wikipedia.org/wiki/Nicaragua">Nicaragua</a>.  I'm learning javascript with Code the Dream</p>
+          <li><p>I'm originally from <a href="https://en.wikipedia.org/wiki/Nicaragua">Nicaragua</a>.  I'm learning javascript with Code the Dream</p></li>
         </ul>
       </section>
-      <section>
+      <section id='experience'>
+        <h2>Experience</h2>
         <ul>
-          <li><h2>Experience</h2></li>
-          <p> I'm new in programming</p>
+          <li>I'm new in programming</li>
+          <li>Javascript</li>
+          <li>Html</li>
           <ul>
       </section>
       <section id = 'skills'>
@@ -26,12 +29,33 @@
         </ul>
       </section>
       <section>
+        <h2>Connect</h2>
         <ul>
-          <li><h2>Connect</h2></li>
-          <p>melaniasolism@gmail.com</p>
+          <li> <p>melaniasolism@gmail.com</p>  </li>
+
         </ul>
       </section>
-    <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_485008244_105123.jpg" width="300" height="200">
+      <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_485008244_105123.jpg" width="300" height="200">
+    <section id='leave_messages'>
+      <h2>Leave a Message</h2>
+      <form name='leave_message'>
+        <label>Name:</label><br>
+        <input type = 'text' name='name' required='true'><br>
+        <label>Email:</label><br>
+        <input type = 'email' name = 'email' required = 'true'><br>
+        <label>Message:</label><br>
+        <textarea name='message' required = 'true'></textarea><br>
+        <button type = 'submit'>Submit</button>
+
+      </form>
+    </section>
+
+    <section id='messages'>
+      <h2>Messages</h2>
+        <ul>
+
+        </ul>
+    </section>
     <footer></footer>
     <script src = "js/index.js"> </script>
   </body>
