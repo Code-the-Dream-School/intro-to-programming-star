@@ -1,0 +1,79 @@
+body{
+  background-color: lavender;
+  color:indigo;
+  font-style: quicksand;
+}
+#messages {
+  padding 8px;
+}
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: lightslategray;
+}
+#experience li{
+  display: block;
+  border-style: double;
+  border-width: thin;
+  width: 200px;
+  height: 20px;
+  background: cyan;
+  padding-bottom: 10px;
+  border-spacing: 5px;
+}
+#skills li {
+  border-block-style: groove;
+  width: 100px;
+
+}
+#leave_messages form label {
+  font-size: 16px;
+  color: mediumvioletred;
+}
+#leave_messages input {
+  font_size: 18px;
+  color: olive;
+  margin-bottom: 20px;
+}
+#leave_messages form textarea {
+  font-size: 17px;
+  color: navy;
+  padding-top: 6px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#leave_messages button {
+  background-color: orange;
+  border-color: midnightblue;
+  padding: 5px;
+  font-size: 18px;
+  color: indigo;
+  font-weight: bolder;
+  margin-left: 50px;
+
+}
+#messages li{
+  display: block;
+  border-width: thick;
+  border-block-style: dotted;
+  width: 400px;
+  height: 30px;
+  background:lightblue ;
+  padding-bottom: 12px;
+}
+#messages button {
+  background-color: plum;
+}
+footer {
+  background-color: yellowgreen;
+  letter-spacing: 2px;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+  body {
+    font-size: 18px;
+    padding: 10px;
+
+  }
+}

@@ -2,7 +2,7 @@ const today = new Date();
 const thisYear = today.getFullYear();
 const footer = document.querySelector('footer');
 const copyright = document.createElement('p');
-copyright.innerHTML= `Melania Solis, ${thisYear}`;
+copyright.innerHTML= `&copy Melania Solis, ${thisYear}`;
 footer.append(copyright);
 const skills = ['Coding','Typing','New Lerner'];
 const skillSection = document.getElementById('skills');
@@ -13,8 +13,10 @@ for (let i=0; i<skills.length; i++) {
   skill.innerHTML=skills[i];
   skillsList.appendChild(skill);
 };
-const messageForm = document.getElementsByName('leave_message');
-messageForm[0].addEventListener('submit', (event) => {
+
+const messageForm = document.querySelector('[name="leave_message"]');
+messageForm.addEventListener('submit', (event) => {
+
   event.preventDefault();
   const name = event.target.name;
   const email = event.target.email;
@@ -42,9 +44,11 @@ messageForm[0].addEventListener('submit', (event) => {
   newMessage.appendChild(removeButton);
 
   removeButton.addEventListener('click', (event) =>{
-    const entry = removeButton.parentNode;
+
+    const entry = event.target.parentNode;
     entry.remove();
     })
-  messageForm[0].reset();
+  messageForm.reset();
+
 
 })
