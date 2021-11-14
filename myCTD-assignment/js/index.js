@@ -38,6 +38,7 @@ const skillsList =document.querySelector("#skills ul");
         let removeButton =document.createElement("button");
             removeButton.setAttribute("type", "button");
             removeButton.innerText = "remove";
+            removeButton.classList.add("removeButton");
             
 
         removeButton.addEventListener("click", function(){

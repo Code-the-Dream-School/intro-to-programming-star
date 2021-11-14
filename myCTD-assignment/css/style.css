@@ -1,9 +1,13 @@
 body{
     background-color:cyan;
     color:darkmagenta;
-    font-family: sans-serif,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;    
+    font-family: sans-serif,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+    font-size: 18px;  
+    line-height:1.4;
+      
 }
 h1{
+    font-size: 5rem;
    color:deeppink;
   
 }
@@ -12,25 +16,89 @@ h2{
     color:blue;
 }
 
+h3,h4{
+    font-family:fantasy;
+    color:forestgreen;
+    margin: 2vw;
+}
+
+p{
+    font-weight: 60ch;
+}
+button {
+}
+
 div.aboutMe{
- color:red;
- margin:25px 50px 75px 200px; 
+    text-align: center;
+ background-color: aliceblue;
+ margin:2vh 40vw 5vh 20vw;
+ border-style:inset solid;
+ border-width: 20px;
+ /* border:solid;  */
 }
 
 div.exp{
-    margin:25px 50px 0px 80px;
-    border:solid;
+    font-weight: bolder;
+    margin:5vh 45vw 1vh 10vw;
+    border:thick double;
+    border-color:blue;
 }
-div.johnny5{
-    margin:0px 50px 0px 150px;
-  
+/* div.johnny5{
+    margin:0rem 0rem 0rem 0rem;
+    
+}  */
+                        /*fix image sizing */
+div.johnny5,img{
+    border: 3px solid green;
+    border-radius: 100px 5%;
+    padding: 5px;
+    width: 20rem;
+    display:inline-block;
+    margin:1vh 5vw 0vh 5vw;
 }
+
+/*To do */
 div.skillsList{
-    margin:50px 0px 0px 400px;
+    text-align: left;
+    font-style: italic;
+    font-size:18px;
+    border:10px dashed red;
+    margin:3vh 55vw 2vh 10vw;
+   
 }
 div.connect{
-    margin:0px 0px 70px 50px;
+    margin:3vh 0vw 2vh 15vw;
 }
 div.leaveMessage{
-    margin:100px 0px 0px 150px;
+    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:smaller;
+    font-weight:bold;
+    margin:5vh 0vw 0vh 15vw;
+    padding: auto;
+}
+.removeButton{
+    background-color: red;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+div.messageList{
+    text-align: auto;
+    border:5px dotted;
+    margin:0em 4em 2em 10em;
+}
+div.message{
+    
+}
+
+footer{
+    background-color:black;
+    color:cornsilk;
+    margin:auto;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+      background-color: black;
+    }
 }
