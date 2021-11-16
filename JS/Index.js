@@ -13,11 +13,12 @@ const skillList=skillSection.querySelector("ul");
 
 for(let skll of skills){
     const skill=document.createElement("li");
-    skill.setAttribute('class','items');
+    skill.setAttribute('class','skillList');
     skill.innerText=skll;
     skillList.appendChild(skill);
 
 }
+
 
 let messageForm= document.getElementsByName("leave_message")[0];
 messageForm.addEventListener('submit',()=>{
@@ -29,17 +30,19 @@ messageForm.addEventListener('submit',()=>{
     const messageSelection= document.querySelector("#messages");
     const messageList= messageSelection.querySelector("ul");
     const newMessages=document.createElement("li");
-    newMessages.innerHTML=`<a href="mailto:${femail}">${fname}</a> <span class="messageItems">${fmessage}</span>`;
+    newMessages.innerHTML=`<div class="col1"><a class="messageName" href="mailto:${femail}">${fname}</a></div> <div class="col1"><span class="messageItems">${fmessage}</span></div>`;
     const removeButton=document.createElement("button");
     removeButton.setAttribute('type','button');
+    removeButton.className+="removebtn";
     removeButton.textContent="Remove";
     removeButton.addEventListener('click',()=>{
         const entry=removeButton.parentNode;
         entry.remove();
     });
     
- newMessages.appendChild(removeButton);
+    newMessages.appendChild(removeButton);
     messageList.appendChild(newMessages);
+
     
 
    
