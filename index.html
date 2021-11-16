@@ -6,8 +6,18 @@
         <link rel="stylesheet" href="./stylesheets/style.css" />
     </head>
     <body>
-        <h1>My Name is <span>Quanayzia Garden</span></h1>
-        <section>
+        <div id="navi">
+            <a class="navigation" href="#about">About</a>
+            <a class="navigation" href="#skills">Skills</a>
+            <a class="navigation" href="#contact">Contact</a>
+            <a class="navigation" href="#messages">Messages</a>
+
+        </div>
+
+        <h1><img src="./imgs/purpleRose-removebg-preview.png">
+            <span id='name'>Quanayzia Garden</span><img src="./imgs/purpleRose-removebg-preview.png">
+        </h1>
+        <section id="about">
             <h2><span>About</span></h2>
             <p>Hello, I am a very motivated 27 year old trying to break into a new industry. I currently work at labcorp as a Cytogentic Technoligist doing various wet lab 
                 work. While working I realied that laboratory work was not for me. While putting client information into a computer I started thinking about the software that diagnositcs companies like Labcorp use, curoius as to how the work set out to 
@@ -23,10 +33,10 @@
         </section>
         <section id='skills'>
             <h2><span>Skills</span></h2>
-            <ul></ul>
+            <ul class="wrap"></ul>
             
         </section>
-        <section>
+        <section id="contact">
             <h2><span>Contact information</span></h2>
             <ul>
                 <li><a href="mailto:qjgarden1@gmail.com?subject=Hello"><img src="./imgs/gmail.png"  alt="email"/></a></li>
@@ -36,22 +46,24 @@
             </ul>
         </section>
 
-        <section>
+        <section id="leave-a-message">
             <h2><span>Leave a Message</span></h2>
             <form name="leave_message">
-            <label for="name">Name<label><br>
-                <input type text="text"  name="name" required="true" /><br>
-            <label>Email Address</label><br>
-                <input type="email" name="email" required="true" /><br>
-            <label>Message</label><br>
-                <textarea name="message" and required="true"></textarea><br>
-            <button type="submit">Submit</button>
+                <label for="name">Name<label><br>
+                    <input type text="text"  name="name" required="true" /><br>
+                <label>Email Address</label><br>
+                    <input type="email" name="email" required="true" /><br>
+                <label>Message</label><br>
+                    <textarea name="message" and required="true"></textarea><br>
+                <button type="submit">Submit</button>
             
             </form>
         </section>
         <section id="messages">
             <h2>Messages</h2>
-            <ul></ul>
+            <div class="messageGrid">
+                <ul></ul>
+            </div>
         
         </section>
         
