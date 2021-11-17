@@ -11,7 +11,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p id="myName">Amirah Munad</p>
+
+    <header id="header">
+        <h3 id="myName">Amirah Munad</h3>
+        <a href="#" class="headerlink">Home</a>
+        <a href="#" class="headerlink">About</a>
+        <a href="#" class="headerlink">Skills</a>
+        <a href="#" class="headerlink">My Projects</a>
+        <a href="#" class="headerlink">Connect</a>
+
+    </header>
     <section>
     <h2>About</h2>
             <p>My coding journey began with exploring options to create a website for my crafts on "Paper Quilling". I learned HTML from FreeCodeCamp and PIAIC and was able to create my first website on "Paper Quilling". Joined Mission Techies and CodetheDream and equip myself with the armor of CSS and JavaScript and able to create multipage, lively, and interactive websites. Since I am on a quest in coding land with a mission to design and develop websites that transforms ideas into solutions. Looking forward to new challenges and helping others in their journey into coding land  :)</p>
@@ -53,21 +62,21 @@
             
             <h2>"Leave a Message"</h2>
 
-            <form name="Leave_a_Message">
+            <form id="form" name="leave_a_message">
             <br/>
             <label for="first-name">First Name</label>
-            <input type="text" name="first-name" required="true"> </input>
+            <input type="text" name="first-name" id="first-name" required="true"> </input>
             <br/>
             <label for="last-name"> Last Name</label>
-            <input type="text" name="last-name" required="true"> </input>
+            <input type="text" name="last-name" id="last-name" required="true"> </input>
             <br/>
             <br/>
             <label for="email"> Email</label>
-            <input type="email" name="email" required="true"> </input>
+            <input type="email" name="email" id="email" required="true"> </input>
             <br/>
             <br/>
             <label for="message">Message</label>
-            <textarea name="message" required="true"> </textarea>
+            <textarea name="message" id="message" required="true"> </textarea>
             <br/>
             <button type="submit">"Submit" </button>
             </form>
@@ -75,7 +84,7 @@
         </section id="messages">
 
             <h2>"Messages"</h2>
-            <ul>
+            <ul id='message_output'>
 
             </ul>
 
