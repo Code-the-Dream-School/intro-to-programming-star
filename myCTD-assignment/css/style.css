@@ -28,13 +28,20 @@ p{
 button {
 }
 
+.navBar{
+    width: 80%;
+    margin: 0 auto;
+    color:forestgreen;
+    background-color:black;
+}
+
 div.aboutMe{
     text-align: center;
  background-color: aliceblue;
  margin:2vh 40vw 5vh 20vw;
  border-style:inset solid;
  border-width: 20px;
- /* border:solid;  */
+
 }
 
 div.exp{
@@ -42,6 +49,7 @@ div.exp{
     margin:5vh 45vw 1vh 10vw;
     border:thick double;
     border-color:blue;
+    overflow:auto;
 }
 /* div.johnny5{
     margin:0rem 0rem 0rem 0rem;
@@ -55,6 +63,7 @@ div.johnny5,img{
     width: 20rem;
     display:inline-block;
     margin:1vh 5vw 0vh 5vw;
+    
 }
 
 /*To do */
@@ -97,8 +106,7 @@ footer{
     margin:auto;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 600px) {
     body {
-      background-color: black;
+      background-color:rgb(21, 19, 19);
     }
-}
