@@ -109,7 +109,7 @@ Push your commit to the remote repository (visible in GitHub):
 
 Check the log to make sure your commit has been published:
 
-    git log --online
+    git log --oneline
 
 Create a pull request and submit:
 

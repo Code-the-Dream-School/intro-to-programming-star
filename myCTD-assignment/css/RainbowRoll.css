@@ -1,0 +1,98 @@
+ /* learned form a Youtube tutorial by: Online Tutorials */
+
+body{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+center{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+
+.rainbow-roll ul{
+    margin: 1rem;
+    padding: 2rem;
+    top: 10rem;
+    right: 2rem;
+    position: fixed;
+    width: 20vw;
+    height: 20vh;
+    
+   
+   
+} 
+
+.rainbow-roll ul li{
+    list-style: none;
+    border-radius: 45%;
+    border: 12px solid #000;
+    position: absolute;
+    top: 2rem;
+    left: 60%;
+    right: 2rem;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important; 
+    animation: animate 6s infinite alternate;
+    transform: translate( -50%, -50%);
+}
+   .rainbow-roll ul li:nth-child(1){
+        width: 40px;
+        height: 40px;
+        border-color: black;
+        animation-delay: .1s;
+    }
+    .rainbow-roll ul li:nth-child(2){
+        width: 80px;
+        height: 80px;
+        border-color: violet;
+        animation-delay: .6s;
+    }
+    .rainbow-roll ul li:nth-child(3){
+        width: 120px;
+        height: 120px;
+        border-color: purple;
+        animation-delay: .9s;
+    }
+    .rainbow-roll ul li:nth-child(4){
+        width: 160px;
+        height: 160px;
+        border-color: blue;
+        animation-delay: 1.2s;
+    }
+    .rainbow-roll ul li:nth-child(5){
+        width: 210px;
+        height: 210px;
+        border-color:green;
+        animation-delay: 1.8s;
+    }
+    .rainbow-roll ul li:nth-child(6){
+        width: 250px;
+        height: 250px;
+        border-color: yellow;
+        animation-delay: 2.0s;
+    }
+    .rainbow-roll ul li:nth-child(7){
+        width: 290px;
+        height: 290px;
+        border-color: orange;
+        animation-delay: 2.5s;
+    }
+    .rainbow-roll ul li:nth-child(8){
+        width: 330px;
+        height: 330px;
+        border-color: red;
+        animation-delay: 1.5s;
+    }
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -50%) rotate(-205deg);/*start*/
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(230deg);
+    }
+}

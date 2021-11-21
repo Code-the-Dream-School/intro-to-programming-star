@@ -44,7 +44,7 @@ For this assignment, you will be transforming your webpage with a more robust gr
 
 - [ ] Add a navigational header to your webpage
   - [ ] The navigation menu should include a link to each of your sections (i.e. "About", "Experience", etc.)
-  - [ ] (Optional) Make the header sticky/fixed on the page
+  - [ ] (Optional) Make the header sticky/fixed on the page(make something sticky/fixed to page)
 - [ ] Change the layout of your "Experience" section using rows and columns so items are displayed in a grid rather than a list
   - [ ] Hint: use either Flexbox or CSS Grid
 - [ ] Update the "Leave a Message" form to use Flexbox or CSS Grid
