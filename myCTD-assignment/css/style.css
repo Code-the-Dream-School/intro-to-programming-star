@@ -2,13 +2,14 @@ body{
     background-color:cyan;
     color:darkmagenta;
     font-family: sans-serif,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
-    font-size: 18px;  
+    font-size: 1rem;  
     line-height:1.4;
       
 }
 h1{
     font-size: 5rem;
    color:deeppink;
+   padding-left: 5vw;
   
 }
 
@@ -25,17 +26,71 @@ h3,h4{
 p{
     font-weight: 60ch;
 }
-button {
+button:hover {
+    background-color: red;
+    color: yellowgreen;
 }
 
 .navBar{
+    top: 0rem;
     width: 80%;
-    margin: 0 auto;
-    color:forestgreen;
-    background-color:black;
+    /* color:forestgreen; */
+    background-color:black; 
+    float: none;
+     position: fixed;
+     margin-left: 0.3rem;
+}
+.navBar ul{
+    color:red;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+    
+}
+.navBar li{
+    display: inline-block;
+    margin-right: 70px;
+   padding: 5px 5px;
+
+    position: relative; 
+}
+.navBar a{
+    color:aqua;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 1rem;
+    font-family: fantasy;
+}
+.navBar a:hover{
+    color:rgb(202, 7, 160);
 }
 
-div.aboutMe{
+.navBar a:after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color:red;
+    transition: all ease-in-out 300ms;
+}
+.navBar a:hover::after{
+    width: 100%;
+}
+
+
+header{
+    background: rgb(6, 6, 43);
+    width: 5px 5px;
+}
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+   
+}
+
+div#aboutMe{
     text-align: center;
  background-color: aliceblue;
  margin:2vh 40vw 5vh 20vw;
@@ -44,46 +99,57 @@ div.aboutMe{
 
 }
 
-div.exp{
+div#exp{
+    
+    display: flex;
     font-weight: bolder;
-    margin:5vh 45vw 1vh 10vw;
+    margin: 5rem 4rem 6rem 8rem;
     border:thick double;
     border-color:blue;
-    overflow:auto;
+    overflow: auto;
+    
+}
+div#exp li{
+    display: flex;
 }
 /* div.johnny5{
     margin:0rem 0rem 0rem 0rem;
     
 }  */
                         /*fix image sizing */
-div.johnny5,img{
+div#johnny5,img{
     border: 3px solid green;
     border-radius: 100px 5%;
-    padding: 5px;
+    padding: 0.1rem;
     width: 20rem;
     display:inline-block;
-    margin:1vh 5vw 0vh 5vw;
+    margin:1vh 5vw 0vh 2vw;
+    background-color:chocolate;
+    color:aliceblue;
     
 }
 
 /*To do */
-div.skillsList{
+div#skillsList{
     text-align: left;
     font-style: italic;
-    font-size:18px;
-    border:10px dashed red;
+    font-size:1rem;
+    border: 0.2rem dashed red;
     margin:3vh 55vw 2vh 10vw;
-   
+    column-count: 3;
+    display:flex;
 }
-div.connect{
+div#connect{
     margin:3vh 0vw 2vh 15vw;
 }
-div.leaveMessage{
+div#leaveMessage{
     font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:smaller;
     font-weight:bold;
-    margin:5vh 0vw 0vh 15vw;
-    padding: auto;
+    margin:3rem 0rem 0rem 15rem;
+    padding: 2rem;
+    display: flexbox;
+    justify-content: space-between;
 }
 .removeButton{
     background-color: red;
@@ -91,22 +157,23 @@ div.leaveMessage{
     border-radius: 0.5rem;
 }
 
-div.messageList{
+div#messageList{
     text-align: auto;
     border:5px dotted;
     margin:0em 4em 2em 10em;
 }
-div.message{
+/* div#message{
     
-}
+} */
 
 footer{
     background-color:black;
     color:cornsilk;
-    margin:auto;
+    
 }
 
-@media screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
     body {
       background-color:rgb(21, 19, 19);
     }
+}
