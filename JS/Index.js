@@ -44,6 +44,7 @@ messageForm.addEventListener('submit',()=>{
     messageList.appendChild(newMessages);
 
     
+ 
 
    
 
@@ -55,3 +56,24 @@ messageForm.addEventListener('submit',()=>{
 
 });
 
+var githubRequest= new XMLHttpRequest();
+ githubRequest.open('GET','https://api.github.com/users/gardenqu/repos');
+ githubRequest.send();
+ githubRequest.addEventListener('load',()=>{
+     var something=githubRequest.responseText;
+
+     let repo=JSON.parse(githubRequest.responseText);
+     console.log(repo);
+
+    let projectSection=document.getElementById('projects');
+    let projectList=projectSection.querySelector('ul');
+
+    for (let obj in repo){
+        let project=document.createElement('li');
+        project.innerText= repo[obj].name;
+        projectList.appendChild(project);
+
+    }
+
+    
+ })
