@@ -78,3 +78,17 @@ messageForm.addEventListener("submit", (event) => {
   messageList.appendChild(newMessage);
   messageForm.reset();
 });
+
+var githubRequest = new XMLHttpRequest();
+githubRequest.open("GET", "https://api.github.com/users/Amirah5/repos");
+
+let repositories;
+
+githubRequest.addEventListener("load", () => {
+  if (githubRequest.readyState === 4) {
+    repositories = JSON.parse(githubRequest.responseText);
+    console.log(repositories);
+  }
+});
+
+githubRequest.send();
