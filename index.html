@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile webpage</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+
+        font-family: "Quicksand", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px 1fr 1fr 100px;
+
+        gap: 10px;
+
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .container div {
+        padding: 10px;
+        border: 1px solid black;
+      }
+
+      .header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      .main {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      .content {
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      .footer {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="main">Main</div>
+      <div class="content-1">Content #1</div>
+      <div class="content-2">Content #2</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
