@@ -79,14 +79,24 @@ messageForm.addEventListener("submit", (event) => {
   messageForm.reset();
 });
 
-var githubRequest = new XMLHttpRequest();
-githubRequest.open("GET", "https://api.github.com/users/Amirah5/repos");
+// var githubRequest = new XMLHttpRequest();
+// githubRequest.open("GET", "https://api.github.com/users/Amirah5/repos");
 
-let repositories;
+// let repositories;
 
-githubRequest.addEventListener("load", () => {
-  if (githubRequest.readyState === 4) {
-    repositories = JSON.parse(githubRequest.responseText);
+// githubRequest.addEventListener("load", () => {
+//   if (githubRequest.readyState === 4) {
+
+//     }
+//   }
+// });
+
+//githubRequest.send();
+
+fetch("https://api.github.com/users/Amirah5/repos")
+  .then((response) => response.json())
+  .then((repositories) => {
+    //repositories = JSON.parse(githubRequest.responseText);
     console.log(repositories);
 
     let projectSection = document.getElementById("projects");
@@ -99,8 +109,18 @@ githubRequest.addEventListener("load", () => {
       project.innerText = repositories[i].name;
       //console.log(repositories[i].name);
       projectList.appendChild(project);
+      //console.log(data.message);
     }
-  }
-});
+  });
 
-githubRequest.send();
+// async function getRepos() {
+//   try {
+//     const response = await fetch("https://api.github.com/users/Amirah5/repos");
+//     const repos = await response.json();
+//     repos.forEach(getRepos);
+//     console.log(reposJson);
+//   } catch (error) {
+//     error.style.display = "block";
+//     console.error(error);
+//   }
+// }
