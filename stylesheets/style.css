@@ -2,6 +2,12 @@ body{
     background-color: rgb(229, 225, 250);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
+    margin: 0px;
+}
+.w-75 {
+    margin:auto;
+    width: 75%;
+
 }
 
 h1,footer{
@@ -81,8 +87,7 @@ col{
 }
 #navi{
     margin-top: -100px;
-    width:100%;
-
+    width:120%;
     position: fixed;
     height: 3em;
     border-bottom-style: outset;

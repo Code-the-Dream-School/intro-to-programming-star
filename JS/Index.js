@@ -56,10 +56,26 @@ messageForm.addEventListener('submit',()=>{
 
 });
 
-var githubRequest= new XMLHttpRequest();
+/*var githubRequest= new XMLHttpRequest();
  githubRequest.open('GET','https://api.github.com/users/gardenqu/repos');
- githubRequest.send();
- githubRequest.addEventListener('load',()=>{
+ githubRequest.send();*/
+
+ fetch('https://api.github.com/users/gardenqu/repos')
+ .then(Response=>Response.json())
+ .then((data)=>{
+    let projectSection=document.getElementById('projects');
+    let projectList=projectSection.querySelector('ul');
+
+    for (let obj in data){
+        let project=document.createElement('li');
+        project.innerText= data[obj].name;
+        projectList.appendChild(project);
+
+    }
+
+ })
+ 
+ /*(githubRequest.addEventListener('load',()=>{
      var something=githubRequest.responseText;
 
      let repo=JSON.parse(githubRequest.responseText);
@@ -76,4 +92,4 @@ var githubRequest= new XMLHttpRequest();
     }
 
     
- })
+ })*/
