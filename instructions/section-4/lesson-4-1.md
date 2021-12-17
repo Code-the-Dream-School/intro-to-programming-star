@@ -78,10 +78,10 @@ The "body" of an HTML document contains all the page's visible content.
 
 HTML describes the structure of a webpage using various semantic elements, such as: headings, paragraphs, lists, and more.
 
-- [ ] Separate the "About", "Experience", and "Connect" sections using the `<section>` element
-- [ ] Wrap each heading in a heading element (e.g. `<h1>About</h1>`)
-- [ ] Wrap each paragraph in a paragraph tag (e.g. `<p>Something about me...</p>`)
-- [ ] Wrap each list in an unordered list element ([learn more](https://www.w3schools.com/html/html_lists.asp))
+- [] Separate the "About", "Experience", and "Connect" sections using the `<section>` element
+- [] Wrap each heading in a heading element (e.g. `<h1>About</h1>`)
+- [] Wrap each paragraph in a paragraph tag (e.g. `<p>Something about me...</p>`)
+- [] Wrap each list in an unordered list element ([learn more](https://www.w3schools.com/html/html_lists.asp))
 
 Feel free to use even more HTML elements by adding images, navigation menus, etc.
 
