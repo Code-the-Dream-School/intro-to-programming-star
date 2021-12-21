@@ -1,8 +1,14 @@
+html {
+    --top-spacing: 100px;
+    scroll-padding-top: var(--top-spacing);
+  }
+
 body{
     background-color: rgb(229, 225, 250);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     margin: 0px;
+    
 }
 .w-75 {
     margin:auto;
@@ -10,7 +16,20 @@ body{
 
 }
 
-h1,footer{
+p{
+    line-height: 2;
+}
+section{
+    margin-top: 6em;
+}
+
+h1{
+    margin:0px;
+
+
+}
+
+footer{
     border-style: dashed;
     border-color: rgb(135, 90, 240);
     margin-top: 100px;
@@ -19,9 +38,28 @@ h1,footer{
     
 }
 footer{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
     margin-top: 2em;
-    font-size: 1em;
-    
+    font-size: 1em; 
+}
+h2{
+    font-size:2em;
+    text-decoration: underline;
+}
+h3{
+    margin-bottom: 3%;
+    text-decoration: underline;
+}
+
+
+img{
+    width:3%;
+}
+
+#contacts li{
+    display: inline;
 }
 
 span{
@@ -30,89 +68,128 @@ span{
 }
 
 
-h2{
-    font-size:2em;
-    text-decoration: underline;
-}
-
-section{
-    margin-top: 6em;
-}
-
-img{
-    width:4%;
-}
-
 
 ul{
     list-style:none ;
 
 }
 
-.skillList{
-    margin-left: auto;
-    margin-right: auto;
-    border: solid;
-    width: 10%;
-    text-align: center;
-    padding-block: 0.5%;
-}
-
-
-
-.messageGrid{
+#flexSkills,#projects div{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
 }
-col{
-    flex:1;
-    
+
+#hSkills,#sSkills,#flexProj{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    border-bottom: solid;
+
 }
-.messageItems{
+.FhSkillList,.FsSkillList,.projList,.date{
+    margin:5%;
+    width: 80%;
+
+}
+
+.projList{
+    display: block;
+}
+
+
+.messageTxt{
     word-break: break-all;
 }
-
-
-.wrap, #navi{
+.messageContent{
     display: flex;
+    flex-direction: column;
+    border:solid;
+    background-color: rgb(184, 116, 248);
+}
+.edit,.remove{
+
+    margin-bottom: 1.5%;
+    border-radius: 60%;
+}
+
+form{
+    color:white;
+    background-color:rgb(164, 83, 240);
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+}
+
+input,textarea {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+#navi{
+    margin-top: 0px;
+    width:100%;
+    position: fixed;
+    height: 8.5%;
+    border-bottom-style: outset;
+    border-bottom-color: rgb(242, 195, 248);
+    border-width: 3px;
+    background-color: rgb(164, 83, 240)
+
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    background-color: blueviolet;
+
+}
+#naviBttn{
+    width: 10rem;
+    height: 50px;
 
     
-}
-.wrap{
-
-    width: 95%;
-}
-#navi{
-    margin-top: -100px;
-    width:120%;
-    position: fixed;
-    height: 3em;
-    border-bottom-style: outset;
-    border-bottom-color: rgb(217, 167, 250);
-    background-color: blueviolet;
 
 }
 
 .navigation{
+    display: none;
     padding: 10px;
     color: white;
 }
-.removebtn{
-    margin-bottom: 15px;
+#myFace{
+    width: 15%;
+    border-radius: 60%;
+    border-style: groove;
+    margin-top: 10%;
 }
 
-button{
-    font-family: monospace;
-    border-radius: 75%;
-}
 
-@media screen and (max-width: 360px){
+
+@media screen and (max-width: 680px){
     section{
         margin: 0.5em;
     }
+
+    img{
+        width:2rem;
+    }
+       
+    #naviBttn{
+        max-width: 3rem;
+        max-height: 35px;
+    }
+    #myFace{
+        margin-top: 20%;
+        width:30%
+    }
+   
+    
+
 }
   
 

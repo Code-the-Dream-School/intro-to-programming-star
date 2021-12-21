@@ -9,57 +9,57 @@
    
     
         <div id="navi">
+            <nav>
+            <button id="naviBttn" onclick="menuClick()">Menu</button>
             <a class="navigation" href="#about">About</a>
+            <a class="navigation" href="#experience">Experience</a>
             <a class="navigation" href="#skills">Skills</a>
-            <a class="navigation" href="#contact">Contact</a>
-            <a class="navigation" href="#messages">Messages</a>
+            <a class="navigation" href="#projects">Projects</a>
+            <a class="navigation" href="#leave-a-message">Leave A Message</a>
+            </nav>
+            <h1>Quanayzia Garden</h1>
 
         </div>
         <main class="w-75">
 
-        <h1><img src="./imgs/purpleRose-removebg-preview.png">
-            <span id='name'>Quanayzia Garden</span><img src="./imgs/purpleRose-removebg-preview.png">
-        </h1>
+            <img id="myFace" src="./imgs/FB_IMG_1640054371706.jpg"/>
         <section id="about">
             <h2><span>About</span></h2>
-            <p>Hello, I am a very motivated 27 year old trying to break into a new industry. I currently work at labcorp as a Cytogentic Technoligist doing various wet lab 
-                work. While working I realied that laboratory work was not for me. While putting client information into a computer I started thinking about the software that diagnositcs companies like Labcorp use, curoius as to how the work set out to 
-                learn more about programming. I started with python and realized that I enjoyed doing the various code academy modules. Coding eventually developed into a something that I wanted to learn more about.
-                I want to learn enough to be able to create and fix things. Hopefully all goes well in my journey </p>
+            <p>Hello, I am a very motivated NC A&T Alumni trying to break into a new industry. I currently work at Labcorp as a Cytogentic Technologist doing various wet lab work. While I was studying for my Ctyogentics certification I learned of a branch of biology, called Bio-informatics, that makes use of technology to aid in biological research and discoveries. I became fascinated by it and started teaching myself how to code. I really enjoyed coding and it became a something I did just to pass the time by. Coding eventually developed into a something that I wanted to learn more about. Needing a more structured program I sought out the help of Code the dream, and was set down the right path. The first language I began learning was Python, then I switched to learning C++ because I really like the language. I took Code the Dreams intro Web Development class where I was the taught JavaScript,CSS,and HTML.</p>
         </section>
-        <section>
+        <section id="experience">
             <h2><span>Experiences</span></h2>
-            I have 1 year of expereince working withing a laboratory setting as cytoegnetics technologist. There I was trained on many different assasy techniques such as PCR,
-            oncoscan,and DLP. I was trained to follow all neccesary procedures. 
-            I have a few months of experience when it comes to web development. The most I have done is make a basic webpage game with heavy guidance. I am currently learning SQL, C++, HTML,
-            JAVASCRIPT, and CSS, I dabbled a little bit in JAVA and Python. 
+            <p>I have a few months of experience when it comes to web development. Using my HTML,CSS,and JavaScript and problems solving skills I was able to create a matching game. I am currently learning SQL, C++, HTML,
+            JavaScript and CSS, I dabbled a little bit in JAVA and Python. In the future I plan to get more involved in back end work. Future projects include creating an app from scratch, programming a microbit using python and C++. My interests are in Machine AI learning, game development, genome editing, and computational science.
+        </p>
         </section>
-        <section id='skills'>
+
+        <section id="skills">
             <h2><span>Skills</span></h2>
-            <ul class="wrap"></ul>
+            <div id="flexSkills">
+                <ul id="hSkills">
+                  <h3>Hard Skills</h3>
+                </ul>
+                <ul id="sSkills">
+                  <h3>Soft Skills</h3>
+                </ul>
+               </div>
             
         </section>
         <section id="projects">
-            <h2>Projects</h2>
-            <ul></ul>
+            <h2><span>Projects</span></h2>
+            <div><ul id="flexProj"></ul></div>
+            
 
 
         </section>
-        <section id="contact">
-            <h2><span>Contact information</span></h2>
-            <ul>
-                <li><a href="mailto:qjgarden1@gmail.com?subject=Hello"><img src="./imgs/gmail.png"  alt="email"/></a></li>
-                <li><a href="https://www.linkedin.com/in/quanayzia-garden-917224118/" target="_blank" ><img src="./imgs/lkldn.png" alt="Linkledin account"/></a></li>
-                <li><a href="https://github.com/gardenqu" target="_blank"><img src="./imgs/gith.png"  alt="Github"/> </a></li>
-                
-            </ul>
-        </section>
-
+        
         <section id="leave-a-message">
             <h2><span>Leave a Message</span></h2>
             <form name="leave_message">
+
                 <label for="name">Name<label><br>
-                    <input type text="text"  name="name" required="true" /><br>
+                    <input type="text"  name="name" required="true" /><br>
                 <label>Email Address</label><br>
                     <input type="email" name="email" required="true" /><br>
                 <label>Message</label><br>
@@ -70,15 +70,19 @@
         </section>
         <section id="messages">
             <h2>Messages</h2>
-            <div class="messageGrid">
                 <ul></ul>
-            </div>
         
         </section>
         
-        
        
-        <footer></footer>
+        <footer>
+            <ul id="contacts">  
+                <li><a href="mailto:qjgarden1@gmail.com?subject=Hello"><img src="./imgs/gmail.png"  alt="email"/></a></li>
+                <li><a href="https://www.linkedin.com/in/quanayzia-garden-917224118/" target="_blank" ><img src="./imgs/lkldn.png" alt="Linkledin account"/></a></li>
+                <li><a href="https://github.com/gardenqu" target="_blank"><img src="./imgs/gith.png"  alt="Github"/> </a></li>
+                
+            </ul>
+        </footer>
         <script src="JS/Index.js"></script> 
     </main>
         
