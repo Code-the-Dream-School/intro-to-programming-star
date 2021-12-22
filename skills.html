@@ -1,5 +1,5 @@
 <!-- ===================================================================================
-                                   Home Page (index.html)
+                                   Skills Page (skills.html)
 =================================================================================== -->
 
 <!DOCTYPE html>
@@ -11,6 +11,8 @@
     <title>My Profile webpage</title>
 
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
@@ -26,7 +28,6 @@
     <!-- ===========================================================================
                              Container Grid (wrapper)
     =========================================================================== -->
-
     <div class="container">
       <!-- ===========================================================================
                              Header with Navigation tabs links
@@ -42,59 +43,48 @@
       <!-- =========================================================================
                                 Main Grid item 
     =========================================================================== -->
+      <div class="main">
+        <div class="main-skillspage">
+          <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+              <!-- <li>HTML and CSS</li>
 
-      <div class="main-homepage">
-        <div class="indexpage-main">
-          <!-- =======================================================
-                               Nested Main Big Heading
-    ======================================================= -->
-          <div class="nested-main-heading">
-            <h2>
-              Hello, my name is Ami. I am a Designer / Front End Developer
-              living in Bay Area, Ca.
-            </h2>
-          </div>
-          <!-- ==========================================================================
-                         Nested Main Columns with their sub headings
-    ========================================================================== -->
-          <div class="nested-main-columns">
-            <div class="nested-main-detail">
-              <h2>UI/UX Design:</h2>
-              <p>
-                I code with passion and bring ideas to life in an intuitive, and
-                interactive way with pleasing designs.
-              </p>
-            </div>
-            <div class="nested-main-detail">
-              <h2>Front-end Developer:</h2>
-              <p>
-                I am able to transform your requirements by implementing visual
-                and interactive elements that users interact with using a web
-                application.
-              </p>
-            </div>
-            <div class="nested-main-detail">
-              <h2>Cloud Native Computing:</h2>
-              <p>
-                I can install Docker engine, creat containers from images, and
-                use container orchestration to make containerized applications,
-                and make these accessible using publishing ports.
-              </p>
-            </div>
-            <!-- ========================================================================= -->
-          </div>
+              <li>JavaScript</li>
+              <br />
+              <li>Git/Version Control</li>
+              <br />
+              <li>DOM Manipulation</li>
+              <br />
+              <li>Responsive Web Design</li>
+              <br />
+              <li>Testing/Debugging</li>
+              <br />
+              <li>Ajax and Fetch API</li> -->
+            </ul>
+          </section>
         </div>
       </div>
       <!-- ===================================================================================
                                       Content 1 grid item
         =================================================================================== -->
+
       <div class="content-1">
-        <a href="portfoliopics/homepagepic-pexels-daria-shevtsova-1580329.jpg"
-          ><img
-            id="homepagepic"
-            src="portfoliopics/homepagepic-pexels-daria-shevtsova-1580329.jpg"
-            alt="a laptop is sitting on the table which is in front of an open window showing beautiful scene from outside"
-        /></a>
+        <img
+          class="skillpage-pic1"
+          src="https://opensource.com/sites/default/files/styles/image-full-size/public/lead-images/code_development_programming.png?itok=M_QDcgz5"
+          alt=""
+        />
+      </div>
+      <!-- ===================================================================================
+                                      Content 2 grid item
+        =================================================================================== -->
+      <div class="content-2">
+        <img
+          class="skillpage-pic2"
+          src="https://blog.education-ecosystem.com/wp-content/uploads/2018/12/javascript-depositphotos-opt700_sm3dt7.jpg"
+          alt=""
+        />
       </div>
       <!-- =========================================================================================
                                 Footer grid item with Social Icons links
@@ -143,5 +133,6 @@
       </div>
       <!-- =================================================================================== -->
     </div>
+    <script src="skills.js"></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 <!-- ===================================================================================
-                                   Home Page (index.html)
+                                   Connect Page (connect.html)
 =================================================================================== -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +12,8 @@
     <title>My Profile webpage</title>
 
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
@@ -26,7 +29,6 @@
     <!-- ===========================================================================
                              Container Grid (wrapper)
     =========================================================================== -->
-
     <div class="container">
       <!-- ===========================================================================
                              Header with Navigation tabs links
@@ -42,63 +44,84 @@
       <!-- =========================================================================
                                 Main Grid item 
     =========================================================================== -->
+    <div class="main">
+      <div class="main-connectpage">
+      </section>
 
-      <div class="main-homepage">
-        <div class="indexpage-main">
-          <!-- =======================================================
-                               Nested Main Big Heading
-    ======================================================= -->
-          <div class="nested-main-heading">
-            <h2>
-              Hello, my name is Ami. I am a Designer / Front End Developer
-              living in Bay Area, Ca.
-            </h2>
-          </div>
-          <!-- ==========================================================================
-                         Nested Main Columns with their sub headings
-    ========================================================================== -->
-          <div class="nested-main-columns">
-            <div class="nested-main-detail">
-              <h2>UI/UX Design:</h2>
-              <p>
-                I code with passion and bring ideas to life in an intuitive, and
-                interactive way with pleasing designs.
-              </p>
-            </div>
-            <div class="nested-main-detail">
-              <h2>Front-end Developer:</h2>
-              <p>
-                I am able to transform your requirements by implementing visual
-                and interactive elements that users interact with using a web
-                application.
-              </p>
-            </div>
-            <div class="nested-main-detail">
-              <h2>Cloud Native Computing:</h2>
-              <p>
-                I can install Docker engine, creat containers from images, and
-                use container orchestration to make containerized applications,
-                and make these accessible using publishing ports.
-              </p>
-            </div>
-            <!-- ========================================================================= -->
-          </div>
-        </div>
+      <section id="connect">
+      <h2>Connect</h2>
+      <p>If you want to get in touch, and discuss about a projec collaboration,send an email to
+        <br/> <br/>amimun@gmail.com 
+        <br/>
+        <br/>and let's discuss.</p><br/>
+        
+      <p> You can connect with me on Linked In at 
+        <br/><br/>
+          https://www.linkedin.com/in/ami-mun/</p>
+          <br/>          
+      <p> You can get in touch at Twitter<br/><br/>
+          https://twitter.com/amimun</p>
+      </section>
+
+      <section id="input">
+          
+          <h2>"Leave a Message"</h2>
+
+          <form id="form" name="leave_a_message">
+          <br/>
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" required="true"> </input>
+          <br/>
+          <label for="last-name"> Last Name</label>
+          <input type="text" name="last-name" id="last-name" required="true"> </input>
+          <br/>
+          <br/>
+          <label for="email"> Email</label>
+          <input type="email" name="email" id="email" required="true"> </input>
+          <br/>
+          <br/>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required="true"> </textarea>
+          <br/>
+          <button type="submit">"Submit" </button>
+          </form>
+
+      </section id="messages">
+
+          <h2>"Messages"</h2>
+          <ul id='message_output'>
+
+          </ul>
+
+      <section>
+
+      </section>
+
       </div>
+    </div>
       <!-- ===================================================================================
                                       Content 1 grid item
         =================================================================================== -->
       <div class="content-1">
-        <a href="portfoliopics/homepagepic-pexels-daria-shevtsova-1580329.jpg"
-          ><img
-            id="homepagepic"
-            src="portfoliopics/homepagepic-pexels-daria-shevtsova-1580329.jpg"
-            alt="a laptop is sitting on the table which is in front of an open window showing beautiful scene from outside"
-        /></a>
+        <img
+          class="connectpage-pic1"
+          src="portfoliopics/miles-burke-idhx-MOCDSk-unsplash.jpg"
+          alt=""/>
+      </div>
+      <!-- ===================================================================================
+                                      Content 2 grid item
+        =================================================================================== -->
+      <div class="content-2">
+        <img
+          class="connectpage-pic2"
+          src="portfoliopics/piotr-cichosz-NhRk-907Ayc-unsplash.jpg"
+          alt=""
+        />         
       </div>
       <!-- =========================================================================================
                                 Footer grid item with Social Icons links
         ========================================================================================= -->
+
       <div class="footer">
         <!-- <footer> -->
         <p id="copyright">Copyright &copy; 2021 Ami</p>
@@ -143,5 +166,6 @@
       </div>
       <!-- =================================================================================== -->
     </div>
+      <script src="connect.js"></script>    
   </body>
 </html>
