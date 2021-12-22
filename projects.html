@@ -1,6 +1,7 @@
 <!-- ===================================================================================
-                                   Home Page (index.html)
+                                   Projects Page (projects.html)
 =================================================================================== -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +12,8 @@
     <title>My Profile webpage</title>
 
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
@@ -20,13 +23,13 @@
       src="https://kit.fontawesome.com/da938c83ef.js"
       crossorigin="anonymous"
     ></script>
+    
   </head>
 
   <body>
     <!-- ===========================================================================
                              Container Grid (wrapper)
     =========================================================================== -->
-
     <div class="container">
       <!-- ===========================================================================
                              Header with Navigation tabs links
@@ -42,66 +45,64 @@
       <!-- =========================================================================
                                 Main Grid item 
     =========================================================================== -->
+      
+        <div class="main-projectspage">
+        <section id="projects">
+          <p><h2>My Projects</h2>
+            <div id="projects-text">
+                  <ul>
+                      <li>Designed and developed website on "Paper Quilling" for crafters.</li>
 
-      <div class="main-homepage">
-        <div class="indexpage-main">
-          <!-- =======================================================
-                               Nested Main Big Heading
-    ======================================================= -->
-          <div class="nested-main-heading">
-            <h2>
-              Hello, my name is Ami. I am a Designer / Front End Developer
-              living in Bay Area, Ca.
-            </h2>
-          </div>
-          <!-- ==========================================================================
-                         Nested Main Columns with their sub headings
-    ========================================================================== -->
-          <div class="nested-main-columns">
-            <div class="nested-main-detail">
-              <h2>UI/UX Design:</h2>
-              <p>
-                I code with passion and bring ideas to life in an intuitive, and
-                interactive way with pleasing designs.
-              </p>
+                      <br/>
+  
+                      <li>Developed an intuitive, and interactive site for local shipping business "Commerce 24 X 7" .</li>
+                      
+                      <br/>
+
+                      <li>Completed the game design challenge "Build a house".</li>
+
+                      <br/>
+                      
+                      <li>Writer and creator of travelling blog"Explore California with a Local".</li>
+
+                      <br/>
+                      
+                      <li>Created online meetup place "Coder's Base" for coding enthusiasts to get together, learn and share.</li>
+                      
+                      </ul>
             </div>
-            <div class="nested-main-detail">
-              <h2>Front-end Developer:</h2>
-              <p>
-                I am able to transform your requirements by implementing visual
-                and interactive elements that users interact with using a web
-                application.
-              </p>
-            </div>
-            <div class="nested-main-detail">
-              <h2>Cloud Native Computing:</h2>
-              <p>
-                I can install Docker engine, creat containers from images, and
-                use container orchestration to make containerized applications,
-                and make these accessible using publishing ports.
-              </p>
-            </div>
-            <!-- ========================================================================= -->
-          </div>
-        </div>
+  
+          </p>
+      </section>
       </div>
+    
       <!-- ===================================================================================
                                       Content 1 grid item
         =================================================================================== -->
+           
       <div class="content-1">
-        <a href="portfoliopics/homepagepic-pexels-daria-shevtsova-1580329.jpg"
-          ><img
-            id="homepagepic"
-            src="portfoliopics/homepagepic-pexels-daria-shevtsova-1580329.jpg"
-            alt="a laptop is sitting on the table which is in front of an open window showing beautiful scene from outside"
-        /></a>
+        <iframe src="https://giphy.com/embed/caVdtPeN83dza" width="480" height="381" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/information-microsoft-error-caVdtPeN83dza">via GIPHY</a></p>
+
+      </div>
+      <!-- ===================================================================================
+                                      Content 2 grid item
+        =================================================================================== -->
+      <div class="content-2">
+        <img
+          class="projectspage-pic2"
+          src="portfoliopics/myhobbypagepict.PNG"
+          alt=".."
+        />
+
       </div>
       <!-- =========================================================================================
                                 Footer grid item with Social Icons links
         ========================================================================================= -->
+
       <div class="footer">
         <!-- <footer> -->
-        <p id="copyright">Copyright &copy; 2021 Ami</p>
+          <!-- Copyright &copy; 2021 Ami -->
+        <p id="copyright"></p>
 
         <ol class="social-media">
           <a
@@ -143,5 +144,7 @@
       </div>
       <!-- =================================================================================== -->
     </div>
+
+    <script src="projects.js"></script>
   </body>
 </html>

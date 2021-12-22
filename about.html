@@ -1,5 +1,5 @@
 <!-- ===================================================================================
-                                   Home Page (index.html)
+                                   About.html Page 
 =================================================================================== -->
 
 <!DOCTYPE html>
@@ -11,6 +11,8 @@
     <title>My Profile webpage</title>
 
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
@@ -26,7 +28,6 @@
     <!-- ===========================================================================
                              Container Grid (wrapper)
     =========================================================================== -->
-
     <div class="container">
       <!-- ===========================================================================
                              Header with Navigation tabs links
@@ -39,66 +40,53 @@
         <a href="projects.html" class="headerlink"> Projects</a>
         <a href="connect.html" class="headerlink">Connect</a>
       </div>
-      <!-- =========================================================================
+
+      <!--        
+        =========================================================================
                                 Main Grid item 
     =========================================================================== -->
+      <div class="main-aboutpage">
+        <section id="about">
+          <h2>About</h2>
+          <p>
+            My coding journey began with exploring options to create a website
+            for my crafts on "Paper Quilling". I learned HTML from FreeCodeCamp
+            and PIAIC and was able to create my first website on "Paper
+            Quilling". Joined Mission Techies and CodetheDream and equip myself
+            with the armor of CSS and JavaScript and able to create multipage,
+            lively, and interactive websites. Since I am on a quest in coding
+            land with a mission to design and develop websites that transforms
+            ideas into solutions. Looking forward to new challenges and helping
+            others in their journey into coding land :)
+          </p>
+        </section>
+        <p></p>
+      </div>
+      <!-- =========================================================================
+                               Content 1 grid item
+        ======================================================================= -->
 
-      <div class="main-homepage">
-        <div class="indexpage-main">
-          <!-- =======================================================
-                               Nested Main Big Heading
-    ======================================================= -->
-          <div class="nested-main-heading">
-            <h2>
-              Hello, my name is Ami. I am a Designer / Front End Developer
-              living in Bay Area, Ca.
-            </h2>
-          </div>
-          <!-- ==========================================================================
-                         Nested Main Columns with their sub headings
-    ========================================================================== -->
-          <div class="nested-main-columns">
-            <div class="nested-main-detail">
-              <h2>UI/UX Design:</h2>
-              <p>
-                I code with passion and bring ideas to life in an intuitive, and
-                interactive way with pleasing designs.
-              </p>
-            </div>
-            <div class="nested-main-detail">
-              <h2>Front-end Developer:</h2>
-              <p>
-                I am able to transform your requirements by implementing visual
-                and interactive elements that users interact with using a web
-                application.
-              </p>
-            </div>
-            <div class="nested-main-detail">
-              <h2>Cloud Native Computing:</h2>
-              <p>
-                I can install Docker engine, creat containers from images, and
-                use container orchestration to make containerized applications,
-                and make these accessible using publishing ports.
-              </p>
-            </div>
-            <!-- ========================================================================= -->
-          </div>
-        </div>
-      </div>
-      <!-- ===================================================================================
-                                      Content 1 grid item
-        =================================================================================== -->
       <div class="content-1">
-        <a href="portfoliopics/homepagepic-pexels-daria-shevtsova-1580329.jpg"
-          ><img
-            id="homepagepic"
-            src="portfoliopics/homepagepic-pexels-daria-shevtsova-1580329.jpg"
-            alt="a laptop is sitting on the table which is in front of an open window showing beautiful scene from outside"
-        /></a>
+        <img
+          class="aboutpage-pic1"
+          src="portfoliopics/pexels-george-milton-7034717.jpg"
+          alt=".."
+        />
       </div>
-      <!-- =========================================================================================
-                                Footer grid item with Social Icons links
-        ========================================================================================= -->
+      <!-- =========================================================================
+                                Content 2 grid item
+        ======================================================================= -->
+      <div class="content-2">
+        <img
+          class="aboutpage-pic2"
+          src="portfoliopics/ben-kolde-bs2Ba7t69mM-unsplash.jpg"
+          alt=""
+        />
+      </div>
+      <!-- -======================================================================
+                         Footer grid item with Social Icons links
+        ======================================================================= -->
+
       <div class="footer">
         <!-- <footer> -->
         <p id="copyright">Copyright &copy; 2021 Ami</p>
@@ -141,7 +129,7 @@
         </ol>
         <!-- </footer> -->
       </div>
-      <!-- =================================================================================== -->
+      <!-- ========================================================================= -->
     </div>
   </body>
 </html>
