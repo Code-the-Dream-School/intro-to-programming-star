@@ -52,23 +52,47 @@ const messageForm = document.querySelector("[name=\"leave_message\"]");
     messageForm.reset();
 });
 
+ {
+     // const githubRequest = new XMLHttpRequest();
 
-    const githubRequest = new XMLHttpRequest();
+    // // console.log(githubRequest.readyState);
+    // githubRequest.open("GET", "https://api.github.com/users/curt4207/repos");
+    // githubRequest.send();
+    // githubRequest.addEventListener("load", function(){
+    //     let repositories = JSON.parse(this.response);
+    //     const projectSection = document.querySelector("#projects");
+    //     const projectList = projectSection.querySelector("ul");
 
-    // console.log(githubRequest.readyState);
+    //     for(let i = 0; i < repositories.length; i++){
+    //         let project = document.createElement("li");
+            
+    //         project.innerText = repositories[i].name;
+    //         projectList.appendChild(project);
+    //         console.log(i);
+    //         project.innerHTML
+    //     }
+    // });
+ }
+    fetch("https://api.github.com/users/curt4207/repos")
+        .then(response => response.json())
+        .then(function(repositories) {
+            
+            
+            const projectSection = document.querySelector("#projects");
+            const projectList = projectSection.querySelector("ul");
+    
+            for(let i = 0; i < repositories.length; i++){
+                let project = document.createElement("li");
+                let a = document.createElement("a");
 
-    githubRequest.open("GET", "https://api.github.com/users/curt4207/repos");
-    githubRequest.send();
-    githubRequest.addEventListener("load", function(){
-    let repositories = JSON.parse(this.response);
-    const projectSection = document.querySelector("#projects");
-    const projectList = projectSection.querySelector("ul");
+                a.href = repositories[i].html_url;
+                a.innerText = repositories[i].name;
+                project.appendChild(a);
+                
 
-    for(let i = 0; i < repositories.length; i++){
-        let project = document.createElement("li");
-
-        project.innerText = repositories[i].name;
-        projectList.appendChild(project);
-        console.log(i);
-    }
-    });
+                projectList.appendChild(project);
+                // console.log(repositories[i].html_url);
+                
+            }
+        })
+        .catch(error => console.log(error)); 
