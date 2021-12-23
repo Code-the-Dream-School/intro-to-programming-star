@@ -1,5 +1,6 @@
 <!DOCTYPE html>
     <html lang="en">
+       <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <head>
             <meta charset="utf-8">
             <title>Curtis Clayton's Web Portfolio</title>
@@ -60,12 +61,12 @@
          <li>- the Odin project still working on it.</li>
          <li>- Kahn Academy JavaScript/ CSS/ HTML.</li>
          <li>- Current Student at Code The Dream (started 2021).</li>
-          
+          </ul>
         </p>
     </div>    
 
     <div id="johnny5">
-        <img src="johnny5000_04-23-2021-.JPEG" alt="a picture of johnny5000, johnny5000 is a hexapod robot that I built"><p><li>Big Hexapod robot that I started building over the pandemic after purchasing a Raspberry Pi 4b, currently learning how to program it using Python 3.</li></p>
+        <img src="johnny5000_04-23-2021-.JPEG" alt="a picture of johnny5000, johnny5000 is a hexapod robot that I built"><p><ul><li>Big Hexapod robot that I started building over the pandemic after purchasing a Raspberry Pi 4b, currently learning how to program it using Python 3.</li></ul></p>
         <!--need to move style to CSS-->
         </ul>
     </div>     
@@ -106,13 +107,13 @@
         <form name="leave_message">
 
             <br><label for="name">Your Name</label>
-            <input type="text" name="name" required="true"></br>
+            <input type="text" id="name"name="name" required="true"></br>
 
             <br><label for="email">Your Email</label>
-            <input type="email" name="email" required="true"></br>
+            <input type="email" id="email" name="email" required="true"></br>
 
             <br><label for="message">leave a Message</label>
-            <textarea name="message" required="true">
+            <textarea name="message" id="message" required="true">
             </textarea></b>          
             <br><label for="submit">Submit</label>
             <button type="submit" name="submit" >Submit</button></br>   
