@@ -65,40 +65,69 @@
 
       <section id="input">
           
-          <h2>"Leave a Message"</h2>
+        <h2>"Leave a Message"</h2>
 
-          <form id="form" name="leave_a_message">
-          <br/>
-          <label for="first-name">First Name</label>
-          <input type="text" name="first-name" id="first-name" required="true"> </input>
-          <br/>
-          <label for="last-name"> Last Name</label>
-          <input type="text" name="last-name" id="last-name" required="true"> </input>
-          <br/>
-          <br/>
-          <label for="email"> Email</label>
-          <input type="email" name="email" id="email" required="true"> </input>
-          <br/>
-          <br/>
-          <label for="message">Message</label>
-          <textarea name="message" id="message" required="true"> </textarea>
-          <br/>
-          <button type="submit">"Submit" </button>
-          </form>
+        <form id="form" name="leave_a_message">
+        <br/>
+      
+        <label for="first-name">First Name:</label>
+        
+        <!-- <input type="text" name="first-name" id="first-name" required="true"> </input> -->
+        <br/>
+        <select id="first-name" name="first-name1">
+          <optgroup label="firstname">
+          <option value="Leo">Leo</option>
+          <option value="Ami">Ami</option>
+          <option value="Joe">Joe</option>
+          <option value="Ana">Ana</option>
+          <option value="Zack">Zack</option>
+          </optgroup>
+        </select>
+        <br/>
+        <br/>
+        <label for="last-name"> Last Name:</label> 
+        <!-- <input type="text" name="last-name" id="last-name" required="true"> </input> --> 
+        <br/>
+        <select id="last-name" name="last-name1">
+          <optgroup label="lastname">
+          <option value="James">James</option>
+          <option value="Mun">Mun</option>
+          <option value="Ron">Ron</option>
+          <option value="Mill">Mill</option>
+          <option value="Paul">Paul</option>
+        </select>
+        <br/>
+        <br/>
+         <label for="email"> Email:</label> 
+        <!-- <input type="email" name="email" id="email" required="true"> </input> --> 
+        <select id="email" name="email1">
+          <option value="Leo">Leo@gmail.com</option>
+          <option value="Ami">Ami@gmail.com</option>
+          <option value="Joe">Joe@gmail.com</option>
+          <option value="Ana">Ana@gmail.com</option>
+          <option value="Zack">Zack@gmail.com</option>
+        </select>
+        <br/>
+        <br/>
+        <label for="message">Message</label>
+        <textarea name="message1" id="message" required="true"> </textarea>
+        <br/>
+        <button type="submit">"Submit" </button>
+        </form>
 
-      </section id="messages">
+    <section id="messages">
 
-          <h2>"Messages"</h2>
-          <ul id='message_output'>
+        <h2>"Messages"</h2>
+        <ul id='message_output'>
 
-          </ul>
+        </ul>
 
-      <section>
+    <br/>
 
-      </section>
+    </section>
 
-      </div>
     </div>
+  </div>
       <!-- ===================================================================================
                                       Content 1 grid item
         =================================================================================== -->
@@ -169,3 +198,6 @@
       <script src="connect.js"></script>    
   </body>
 </html>
+
+
+

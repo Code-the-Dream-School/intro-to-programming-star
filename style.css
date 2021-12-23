@@ -23,7 +23,7 @@ body {
 
   display: grid;
 
-  grid-template-columns: 1fr 1fr 440px;
+  grid-template-columns: repeat(2, 1fr) minmax(400px, 1fr);
   grid-gap: 10px;
 
   grid-template-areas:
@@ -165,7 +165,7 @@ body {
 #homepagepic {
   max-width: 100%;
   height: auto;
-  width: 100%;
+  width: 87%;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
@@ -279,6 +279,7 @@ p {
 .main-connectpage {
   display: grid;
   grid-template-columns: repeat(3, 1fr) minmax(5rem, 10rem);
+  grid-template-rows: 100px 400px;
   grid-gap: 10px;
   justify-content: left;
 }
@@ -300,43 +301,10 @@ connect.html page pic 1 */
 
 /* connect.html page pic 2 */
 .connectpage-pic2 {
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
-/* ================================================================================Notes from original CSS
-=============================================================================== */
-/* Content 1 */
 
-/* h2 {
-  font-size: 34px;
-  font-weight: bold;
-  color: #033531;
-} */
-
-/* section about {
-  background-color: rgb(238, 238, 238);
-  padding: 10px 15px;
-  width: 25%;
-  display: block;
+#input {
   text-align: left;
 }
-
-section experience {
-  list-style-position: inside;
-}
-
-section skills {
-  list-style-position: outside;
-}
-
-section input {
-  background-color: rgb(238, 238, 238);
-  padding: 10px 15px;
-  width: 25%;
-  display: block;
-  text-align: left;
-}
-label {
-  font-size: 16px;
-  color: 061a40;
-} */
