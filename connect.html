@@ -1,0 +1,171 @@
+<!-- ===================================================================================
+                                   Connect Page (connect.html)
+=================================================================================== -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile webpage</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/da938c83ef.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- ===========================================================================
+                             Container Grid (wrapper)
+    =========================================================================== -->
+    <div class="container">
+      <!-- ===========================================================================
+                             Header with Navigation tabs links
+    =========================================================================== -->
+      <div class="header">
+        <h3 id="myName">Amirah Munad</h3>
+        <a href="index.html" class="headerlink">Home</a>
+        <a href="about.html" class="headerlink"> About</a>
+        <a href="skills.html" class="headerlink">Skills</a>
+        <a href="projects.html" class="headerlink"> Projects</a>
+        <a href="connect.html" class="headerlink">Connect</a>
+      </div>
+      <!-- =========================================================================
+                                Main Grid item 
+    =========================================================================== -->
+    <div class="main">
+      <div class="main-connectpage">
+      </section>
+
+      <section id="connect">
+      <h2>Connect</h2>
+      <p>If you want to get in touch, and discuss about a projec collaboration,send an email to
+        <br/> <br/>amimun@gmail.com 
+        <br/>
+        <br/>and let's discuss.</p><br/>
+        
+      <p> You can connect with me on Linked In at 
+        <br/><br/>
+          https://www.linkedin.com/in/ami-mun/</p>
+          <br/>          
+      <p> You can get in touch at Twitter<br/><br/>
+          https://twitter.com/amimun</p>
+      </section>
+
+      <section id="input">
+          
+          <h2>"Leave a Message"</h2>
+
+          <form id="form" name="leave_a_message">
+          <br/>
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" required="true"> </input>
+          <br/>
+          <label for="last-name"> Last Name</label>
+          <input type="text" name="last-name" id="last-name" required="true"> </input>
+          <br/>
+          <br/>
+          <label for="email"> Email</label>
+          <input type="email" name="email" id="email" required="true"> </input>
+          <br/>
+          <br/>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required="true"> </textarea>
+          <br/>
+          <button type="submit">"Submit" </button>
+          </form>
+
+      </section id="messages">
+
+          <h2>"Messages"</h2>
+          <ul id='message_output'>
+
+          </ul>
+
+      <section>
+
+      </section>
+
+      </div>
+    </div>
+      <!-- ===================================================================================
+                                      Content 1 grid item
+        =================================================================================== -->
+      <div class="content-1">
+        <img
+          class="connectpage-pic1"
+          src="portfoliopics/miles-burke-idhx-MOCDSk-unsplash.jpg"
+          alt=""/>
+      </div>
+      <!-- ===================================================================================
+                                      Content 2 grid item
+        =================================================================================== -->
+      <div class="content-2">
+        <img
+          class="connectpage-pic2"
+          src="portfoliopics/piotr-cichosz-NhRk-907Ayc-unsplash.jpg"
+          alt=""
+        />         
+      </div>
+      <!-- =========================================================================================
+                                Footer grid item with Social Icons links
+        ========================================================================================= -->
+
+      <div class="footer">
+        <!-- <footer> -->
+        <p id="copyright">Copyright &copy; 2021 Ami</p>
+
+        <ol class="social-media">
+          <a
+            class="social-media"
+            href="https://github.com/Amirah5"
+            target="blank"
+            ><i class="fab fa-github" style="font-size: 30px"> </i
+          ></a>
+
+          <a
+            class="social-media"
+            href="https://www.linkedin.com/in/amirah-munad/"
+            target="blank"
+            ><i class="fab fa-linkedin" style="font-size: 30px"></i
+          ></a>
+
+          <a
+            class="social-media"
+            href="https://twitter.com/qamigal"
+            target="blank"
+            ><i class="fab fa-twitter-square" style="font-size: 30px"></i
+          ></a>
+
+          <a
+            class="social-media"
+            href="https://www.facebook.com/qami.gal.5/"
+            target="blank"
+            ><i
+              class="fab fa-facebook"
+              style="font-size: 30px; color: #340068"
+            ></i
+          ></a>
+
+          <a class="social-media" target="blank"
+            ><i class="fab fa-whatsapp" style="font-size: 30px"></i
+          ></a>
+        </ol>
+        <!-- </footer> -->
+      </div>
+      <!-- =================================================================================== -->
+    </div>
+      <script src="connect.js"></script>    
+  </body>
+</html>

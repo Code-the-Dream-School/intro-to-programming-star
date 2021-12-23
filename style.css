@@ -1,0 +1,342 @@
+/* ========================================================================
+                         CSS Style Page (style.css)
+======================================================================== */
+
+body {
+  /* To remove the default margin */
+  margin: 0;
+  background-color: whitesmoke;
+  color: #340068;
+}
+/* =======================================================================
+                        Container Grid (wrapper)
+=======================================================================  */
+
+/* grid container that span the whole page */
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 440px;
+  grid-gap: 10px;
+
+  grid-template-areas:
+    "header header"
+    "main content"
+    "footer footer";
+
+  /* To add a 10px gap on edges I use padding and box sizing,( border-box tells the browser to account for any border and padding in the values you specify for an element's width and height.) */
+  /* padding: 10px; */
+  box-sizing: border-box;
+}
+
+/* style the whole page container */
+.container div {
+  padding: 10px;
+  border: 1px solid rgb(41, 238, 113);
+}
+
+/* ===========================================================================
+                                Flex header
+=========================================================================== */
+
+/* flex header */
+.header {
+  /* specify the grid line number from where header start and end */
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #c6eea8;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  align-items: center;
+}
+
+/* flex header items */
+#myName {
+  flex-grow: 2;
+}
+/* flex header navigation bar */
+.headerlink {
+  background-color: #aae77c;
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.headerlink:hover {
+  background: #30610a;
+  color: whitesmoke;
+}
+
+/* ===============================================================================
+                                 Flex Footer
+===============================================================================  */
+
+/* flex footer */
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #d2e4c4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+/* footer items */
+#copyright {
+  flex-grow: 2;
+}
+
+/* footer social media icons that links */
+.social-media {
+  vertical-align: top;
+  margin-right: 2em;
+  padding-left: 1;
+  color: #340068;
+}
+
+/* ===========================================================================
+                           Main (grid item of homepage index.html)
+=========================================================================== */
+/* combine the grid rows and columns to make bigger section */
+.main-homepage {
+  display: grid;
+  grid-gap: 10px;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+/* =======================================
+      Main-Heading<---Nested grid inside Main grid (Homepage)
+======================================= */
+.nested-main-heading {
+  display: grid;
+  align-items: center;
+}
+/* =======================================
+      columns and details<---Nested grid inside Main grid (Homepage)
+======================================= */
+
+.nested-main-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: 1fr;
+  grid-gap: 10px;
+  align-items: stretch;
+  align-content: space-between;
+  /* height: 200px; */
+}
+
+.nested-main-columns {
+  background: rgb(171, 236, 171);
+  padding: 8px;
+}
+
+.nested-main-detail {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-auto-columns: 1fr; */
+  grid-gap: 10px;
+  align-items: center;
+  align-content: space-between;
+  /* height: 180px; */
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* ==============================================
+          Content 1 and image of homepage index.html
+================================================== */
+.content {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+/*index.html front page content 1 pic*/
+#homepagepic {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* ===========================================================================
+                           Main (grid item of aboutpage about.html)
+=========================================================================== */
+
+.main-aboutpage {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  /* grid-auto-rows: minmax(250px, auto); */
+  grid-gap: 10px;
+}
+
+.main-aboutpage,
+#about,
+p {
+  background-image: url("portfoliopics/green.jpg");
+}
+
+#about {
+  text-align: center;
+  line-height: 2;
+}
+/* ==============================================
+          Content 1 & 2 with pics of aboutpage about.html
+================================================== */
+
+/* about.html page pic1 */
+.aboutpage-pic1 {
+  height: 550px;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+/* about.html page pic2*/
+.aboutpage-pic2 {
+  width: 100%;
+  height: 550px;
+  object-fit: scale-down;
+}
+
+/* ===========================================================================
+                           Main (grid item of skillspage skills.html)
+=========================================================================== */
+.main-skillspage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(520px, auto);
+  grid-gap: 10px;
+}
+
+#skill-item {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+/* ==============================================
+          Content 1 & 2 with pics of skillspage skills.html
+================================================== */
+
+/* skill.html page pic 1 */
+.skillpage-pic1 {
+  width: 100%;
+  height: 100%;
+}
+
+/* skill.html page pic 2 */
+.skillpage-pic2 {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===========================================================================
+                           Main (grid item of projectsspage projects.html)
+=========================================================================== */
+.main-projectspage {
+  display: grid;
+  grid-template-columns: minmax(9rem, 14rem);
+  grid-gap: 10px;
+  justify-content: left;
+}
+
+#projects-text {
+  background-color: rgb(171, 241, 193);
+  border-width: 5px;
+  border-style: dotted;
+  width: 400px;
+  height: 400px;
+}
+
+/* ==============================================
+          Content 1 & 2 with pics of projectspage projects.html
+================================================== */
+/* projects.html page pic 1 */
+.projectspage-pic1 {
+  width: 100%;
+  height: 100%;
+}
+
+/* projects.html page pic 2 */
+.projectspage-pic2 {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===========================================================================
+                           Main (grid item of connectpage connect.html)
+==========================================================================*/
+
+.main-connectpage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) minmax(5rem, 10rem);
+  grid-gap: 10px;
+  justify-content: left;
+}
+
+#connect {
+  background-color: rgb(171, 241, 193);
+  border-width: 5px;
+  border-style: unset;
+  width: 300px;
+  height: 400px;
+}
+
+/*
+connect.html page pic 1 */
+.connectpage-pic1 {
+  width: 100%;
+  height: 100%;
+}
+
+/* connect.html page pic 2 */
+.connectpage-pic2 {
+  width: 100%;
+  height: 100%;
+}
+/* ================================================================================Notes from original CSS
+=============================================================================== */
+/* Content 1 */
+
+/* h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #033531;
+} */
+
+/* section about {
+  background-color: rgb(238, 238, 238);
+  padding: 10px 15px;
+  width: 25%;
+  display: block;
+  text-align: left;
+}
+
+section experience {
+  list-style-position: inside;
+}
+
+section skills {
+  list-style-position: outside;
+}
+
+section input {
+  background-color: rgb(238, 238, 238);
+  padding: 10px 15px;
+  width: 25%;
+  display: block;
+  text-align: left;
+}
+label {
+  font-size: 16px;
+  color: 061a40;
+} */
